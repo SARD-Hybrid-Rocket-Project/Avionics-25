@@ -1,4 +1,8 @@
-﻿#include <wiringPi.h>
+﻿#include <iostream>
+#include <wiringPi.h> //Raspberry Pi用のGPIOインタフェースライブラリ
+#include <string>
+
+using namespace std;
 
 // LED ピン - wiringPi ピン 0 は BCM_GPIO 17 です。
 // wiringPiSetupSys で初期化する場合は、BCM 番号付けを使用する必要があります
@@ -9,16 +13,18 @@
 
 int main(void)
 {
+	cout << "Kudryavkaを起動しています…" << endl;
+
 	wiringPiSetupSys();
 
-	pinMode(LED, OUTPUT);
-
+	cout << "Welcome" << endl;
+	string str;
 	while (true)
 	{
-		digitalWrite(LED, HIGH);  // オン
-		delay(500); // ミリ秒
-		digitalWrite(LED, LOW);	  // オフ
-		delay(500);
+		cout << ">>>";
+		cin >> str;
+		if (str == "exit") break;
 	}
+
 	return 0;
 }
