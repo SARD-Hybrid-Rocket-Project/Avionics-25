@@ -1,0 +1,9 @@
+﻿  ソースを検証します
+  リモートでソースを 'raspberrypi.local' にコピーします
+  アーキテクチャを検証します
+  アーキテクチャを検証します
+  リモート ビルドを開始しています
+  ソースをコンパイルします:
+  main.cpp
+  オブジェクトをリンクしています
+  Kudryavka.vcxproj -> C:\Users\sinco\Documents\GitHub\Kudryavka\Kudryavka\bin\ARM\Debug\Kudryavka.out

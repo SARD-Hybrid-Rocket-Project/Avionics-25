@@ -1,0 +1,1 @@
+cd /home/Agena/projects/Kudryavka/; g++ -o "/home/Agena/projects/Kudryavka/bin/ARM/Debug/Kudryavka.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/Agena/projects/Kudryavka/obj/ARM/Debug/main.o
